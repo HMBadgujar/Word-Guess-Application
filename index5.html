@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Word</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio autoplay="" loop="">
+        <source src="snowy-peaks.mp3" type="audio/mp3"/>
+    </audio>
+    <div class="container">
+        <h1>Guess the Word</h1>
+        <button id="start-button">Start Game</button>
+        <div id="word-container"></div>
+        <p>Chances left: <span id="chances">Click On Start Game!</span></p>
+        <p>Word Length: <span id="length">Click On Start Game!</span></p>
+        <div id="feedback"></div>
+        <div id="history-container">
+            <!-- <h3>History:</h3> -->
+            <ul id="history-list"></ul>
+        </div>
+        <form id="guess-form">
+            <input type="text" id="guess-input" required>
+            <button id="submitButton" type="submit">Guess</button>
+        </form>
+        <!-- Reload Button -->
+        <button id="reload-button">Reload Game</button>
+    </div> 
+    <div class="gameintro">
+        <center>WORD GUESS GAME</center><br>
+        
+
+    </div>
+    <div class="gamerules">
+        Game Rules:-<br>
+        1.THE WORD CONSISTS OF 5 LETTERS .<br>
+        2.IF YOU GUESS THE CORRECT LETTER AT CORRECT POSITION , THE BOX TURNS GREEN .<br>
+        3.IF YOU GUESS THE CORRECT LETTER BUT NOT AT CORRECT POSITION , THE BOX TURNS YELLOW .<br>
+        4.IN ALL OTHER CASES , THE BOX TURNS RED .<br>
+        5.YOU HAVE MAXIMUM OF 6 CHANCES TO GUESS THE WORD .<br>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>   
+    <script src="index5.js"></script>
+    
+</body>
+</html>
